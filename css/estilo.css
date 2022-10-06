@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 1.1rem;
+}
+
+:root{
+    --textoparaP:1.1rem;
+}
+
+/*limpiar mis etiquetas basicas*/
+ul,a{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+/* dar estilos a objetos alternos*/
+
+hr{
+    width: 200px;
+    height: 2px;
+    background-color: #2196f3;
+    border: none;
+    margin-bottom: 80px;
+}
+
+
+
+main{
+    background-color: red;
+}
+
+
+section{
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 150px ;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    top:0;
+    left: 0;
+    padding: 35px 100 px 0;
+}
+
+.navegacion{
+    display: flex;
+}
+.navegacion li{
+    margin: 0 15px;
+}
+.uno{
+    background-image:url("../assets/img/hero.jpg");
+    height: 82.8vh;
+    background-size:cover;
+    justify-content: center;
+    
+}
+.uno::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    background-color: #414a4f;
+    opacity: 0.75;
+}
+.titulo,.titulodos,.btn{
+    z-index: 11;
+}
